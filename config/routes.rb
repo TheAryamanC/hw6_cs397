@@ -15,4 +15,5 @@ Rails.application.routes.draw do
 
   get '/hello', to: 'todos#hello'
   get '/new_todo', to: 'todos#new'
+  root 'todos#index'
 end
