@@ -17,6 +17,13 @@
   </div>
 
   <div>
+    <%= form.label :done do %>
+      <%= form.check_box :done %>
+      Done
+    <% end %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
