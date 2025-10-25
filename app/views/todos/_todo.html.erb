@@ -3,10 +3,13 @@
     <strong>Description:</strong>
     <%= todo.description %>
   </p>
-</div>
 
-<div>
-  <strong>Done:</strong>
-  <%= todo.done ? "Yes" : "No" %>
-</div>
+  <p>
+    <strong>Done:</strong>
+    <%= todo.done ? "Yes" : "No" %>
+  </p>
+
+  <p>
+    <%= button_to (todo.done ? "Mark as not done" : "Mark done"), todo_path(todo), method: :patch, params: { todo: { done: (!todo.done) } } %>
+  </p>
 </div>
