@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  get '/hello', to: 'todos#hello'
-  get '/new_todo', to: 'todos#new'
-  root 'todos#index'
+  get "/hello", to: "todos#hello"
+  get "/new_todo", to: "todos#new"
+  root "todos#index"
 end
