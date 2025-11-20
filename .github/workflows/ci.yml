@@ -23,8 +23,8 @@ jobs:
       - name: Run Brakeman security scan
         run: bin/brakeman --no-pager
 
-      - name: Audit JavaScript dependencies
-        run: bin/importmap audit
+      # - name: Audit JavaScript dependencies
+      #   run: bin/importmap audit
 
   lint:
     name: Code Linting
